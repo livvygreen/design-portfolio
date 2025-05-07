@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css" />
+	<link rel="stylesheet" href="style-home.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<link href="https://db.onlinewebfonts.com/c/b12214927f76fe50b660c03b5008fa48?family=Catchye+Demo" rel="stylesheet">
+    <title>SliderMenu</title>
+    <link rel="stylesheet" href="styleslide.css"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <span class="name">Olivia Rahne Green</span>
+        </div>
+        <div class="navbar-right">
+          <a href="About.html">About</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Index.html">Landing</a>
+        </div>
+      </nav>
+
+      <div class="title">
+        <img class="ChromeFlowers"src="Images/4x/ChromeFlowers@4x.png"  alt="ChromeFlowers">
+        <img src="Images/4x/T.O.C@4x.png" class="Table-of-Contents" alt="Table of Contents">
+      </div>
+
+    <section class="container">
+        <div class="slider-box">
+            <div class="slider">
+                <img id="slide-1" src="Images/HMotel1.png" alt="HeartbreakMotel"/>
+                <img id="slide-2" src="Images/GHouse2.png" alt="Grandma's House"/>
+                <img id="slide-3" src="Images/GHood3.png" alt="GirlHood Zine"/>
+                <img id="slide-4" src="Images/CClarity.5.png" alt="ClosetClarity"/>
+                <img id="slide-5" src="Images/OUT.1.png" alt="OUT"/>
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+                <a href="#slide-5"></a>
+            </div>
+        </div>
+    </section>
+        <h1 class="Projects">My Projects</h1>
+
+        <h2 class="Academic">Academic Work</h2>
+          <section class="academic container">
+            <div class="academic slider-box">
+              <div class="academic slider">
+              <img id="academic-slider-1" src="Images/CClarity.5.png" alt="ClosetClarity">
+              <img id="academic-slider-2" src="Images/OUT.1.png" alt="OUT">
+              </div>
+             <div class="academic slider-nav">
+              <a href="#academic-slider-1"></a>
+              <a href="#academic-slider-2"></a>
+            </section>
+        <h2 class="Collective">The Collective</h2>
+        <section class="collective container">
+          <div class="collective slider-box">
+            <div class="collective slider">
+            <img id="collective-slider-1" src="Images/HMotel1.png" alt="HeartbreakMotel">
+            <img id="collective-slider-2" src="Images/GHouse2.png" alt="GrandmaHous">
+            </div>
+           <div class="collective slider-nav">
+            <a href="#collective-slider-1"></a>
+            <a href="#collective-slider-2"></a>
+          </section>
+        <h2 class="Personal">Personal Projects</h2>
+         <section class="personal container">
+            <div class="personal slider-box">
+              <div class="personal slider">
+              <img id="personal-slider-1" src="Images/GHood3.png"  alt="GirlHood">
+              <img id="personal-slider-2" src="Images/HMG6.png" alt="HughmGarvey">
+             </div>
+             <div class="personal slider-nav">
+            <a href="#personal-slider-1"></a>
+            <a href="#personal-slider-2"></a>
+          </section>
+    <section>
+    </section>
+    <script>
+      document.querySelectorAll('.imgcontainer img').forEach(image =>{
+          image.onclick = () =>{
+              document.querySelector('.popup').style.display = 'block';
+              document.querySelector('.popup img').src = image.getAttribute('src')
+          }
+      });
+
+      document.querySelector('.popup span').onclick = () =>{
+          document.querySelector('.popup').style.display = 'none';
+      }
+  </script>
+</body>
+
+<footer>
+  <div class="footer-links">
+    <a href="Contact.html">Contact</a>
+    <a href="About.html">About</a>
+    <a href="Index.html">Landing</a>
+  </div>
+  <div class="footer-contact">
+    &copy; 2025 Olivia Green • <a href="mailto:olivia.rahne.green@gmail.com">olivia.rahne.green@gmail.com</a>
+  </div>
+</footer>
+
+</html>

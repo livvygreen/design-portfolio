@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="aboutstyle.css" />
+    <link rel="globals" href="globals.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://db.onlinewebfonts.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link href="https://db.onlinewebfonts.com/c/b12214927f76fe50b660c03b5008fa48?family=Catchye+Demo" rel="stylesheet">
+        <title>About</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+          <span class="name">Olivia Rahne Green</span>
+        </div>
+        <div class="navbar-right">
+          <a href="Home.html">Home</a>
+          <a href="Contact.html">Contact</a>
+          <a href="Index.html">Landing</a>
+        </div>
+      </nav>
+      <img src="Images/4x/Resume@4x.png" class="Resume" alt="My Resume">
+</body>
+
+<footer>
+    <div class="footer-links">
+      <a href="Home.html">Home</a>
+      <a href="Contact.html">Contact</a>
+      <a href="Index.html">Landing</a>
+    </div>
+    <div class="footer-contact">
+      &copy; 2025 Olivia Green • <a href="mailto:olivia.rahne.green@gmail.com">olivia.rahne.green@gmail.com</a>
+    </div>
+  </footer>
+
+
+<script>
+    document.querySelectorAll('.imgcontainer img').forEach(image =>{
+        image.onclick = () =>{
+            document.querySelector('.popup').style.display = 'block';
+            document.querySelector('.popup img').src = image.getAttribute('src')
+        }
+    });
+
+    document.querySelector('.popup span').onclick = () =>{
+        document.querySelector('.popup').style.display = 'none';
+    }
+</script>

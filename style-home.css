@@ -1,0 +1,91 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar container */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Left side (name section) */
+  .navbar-left .name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Right side (links) */
+  .navbar-right a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-right a:hover {
+    background-color: #575757;
+  }
+
+  .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; /* Creates space between navbar and carousel */
+  }
+  
+  /* Carousel Styling */
+  .carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    display: none; /* Hide all images by default */
+  }
+  
+  .carousel-image.active {
+    display: block; /* Only the active image is displayed */
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
